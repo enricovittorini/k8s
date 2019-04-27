@@ -19,4 +19,4 @@ server.listen(port, hostname, () => {
 
 setTimeout((function() {  
     return process.exit(22);
-}), 60000);
+}), 90000);
