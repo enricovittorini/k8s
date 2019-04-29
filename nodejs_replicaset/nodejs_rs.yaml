@@ -7,14 +7,16 @@ spec:
  selector:
   matchLabels:
    env: prod
+   app: nodejs-web
  template:
   metadata:
    labels:
     env: prod
+    app: nodejs-web
   spec:
    containers: 
     - image: enricovittorini/nodejs:1
-      name: nodejs-pod
+      name: nodejs-web
       ports:
       - containerPort: 8080
         protocol: TCP
